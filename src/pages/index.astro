@@ -1,9 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Showcase from "../components/Showcase.jsx";
+import Showcase from "../components/Showcase.astro";
+import Features from "../components/Features.astro";
 ---
 
 <Layout title="Hello">
-  <Showcase />
+  <Showcase showExtra={true} />
+  <Features />
   <h1>Hello, Astro!</h1>
 </Layout>
